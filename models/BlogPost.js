@@ -21,6 +21,7 @@ BlogPost.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
+      allowNull: false, // This ensures a blog post must be associated with a user
       references: {
         model: 'user',
         key: 'id',

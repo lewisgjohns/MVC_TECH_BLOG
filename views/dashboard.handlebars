@@ -1,0 +1,24 @@
+<h1>Dashboard</h1>
+
+<section>
+  <h2>Your Posts</h2>
+  {{#each posts}}
+  <article>
+    <h3>{{this.title}}</h3>
+    <p>Posted on: {{this.created_at}}</p>
+    <form action="/post/{{this.id}}" method="POST" style="display:inline;">
+      <button type="submit" formaction="/post/{{this.id}}/edit">Edit</button>
+      <button type="submit" formaction="/post/{{this.id}}" formmethod="DELETE">Delete</button>
+    </form>
+  </article>
+  {{/each}}
+</section>
+
+<section>
+  <h2>Create New Post</h2>
+  <form action="/post" method="POST">
+    <input type="text" name="title" placeholder="Title" required />
+    <textarea name="content" placeholder="Write your post here..." required></textarea>
+    <button type="submit">Create Post</button>
+  </form>
+</section>

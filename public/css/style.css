@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #dce6d1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2f1b18;
+    padding: 10px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #e3e3c1;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Blog Title */
+  header .blog-title {
+    color: #e3e3c1;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #403530;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Blog Posts */
+  article {
+    background-color: #403530;
+    color: #e3e3c1;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 5px;
+    max-width: 800px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  article h2 {
+    font-size: 24px;
+    color: #f0f0d6;
+    margin-bottom: 10px;
+  }
+  
+  article p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  article .post-info {
+    text-align: right;
+    font-size: 14px;
+    color: #c8c8a7;
+    margin-top: 10px;
+  }
+  
+  /* New Post Form */
+  form {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #403530;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  form input[type="text"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0d6;
+  }
+  
+  form button {
+    background-color: #2f1b18;
+    color: #e3e3c1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #403530;
+  }
+  

@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, BlogPost, Comment } = require('../models');
+const { User } = require('../models');
 
 const userData = require('./userData.json');
 
@@ -11,7 +11,6 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  console.log('Database seeded');
   process.exit(0);
 };
 

@@ -50,3 +50,11 @@ router.post('/logout', (req, res) => {
 });
 
 module.exports = router;
+
+app.post('/login', (req, res) => {
+  // Logic for handling login
+});
+
+app.post('/signup', (req, res) => {
+  // Logic for handling user signup
+});

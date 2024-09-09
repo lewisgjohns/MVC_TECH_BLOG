@@ -14,3 +14,9 @@ document.querySelector('#logout').addEventListener('click', async () => {
     }
   });
   
+//   const form = document.getElementById('myForm');
+// const input = document.createElement('input');
+// input.setAttribute('type', 'text');
+// input.setAttribute('id', 'dynamic-input');
+// input.setAttribute('name', 'dynamicInput'); // Don't forget the name attribute
+// form.appendChild(input);

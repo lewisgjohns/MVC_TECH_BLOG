@@ -2,8 +2,8 @@ MVC_TECH_BLOG
 
 A CVS tech blog that allows users to publish articles, blog posts, and thoughts and opinions.
 
-When the user visits the site they are presented with a homepage that includes any existing blogs, as well as navigationlinks for the homepage and the dashboard. The user is also given the option to log in.
+When the user visits the site they are presented with a homepage that includes any existing blogs, as well as navigation links for the homepage and the dashboard. The user is also given the option to log in.
 The user can sign up or sign in.
-The user cn comment on blog posts or create new blog posts.
+The user can comment on blog posts or create new blog posts.
 THe user also has the option to log out.
 

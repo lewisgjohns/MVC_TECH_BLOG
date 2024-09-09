@@ -1,6 +1,8 @@
+//this file is used to connect to the database
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
+//this is the connection to the database
 const sequelize = process.env.DB_URL
   ? new Sequelize(process.env.DB_URL)
   : new Sequelize(

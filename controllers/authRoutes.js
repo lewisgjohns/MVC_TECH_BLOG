@@ -1,9 +1,12 @@
-const router = require('express').Router();
+//this file will handle the routes for user authentication
+const express = require('express');
+const app = express();
+const router = express.Router();
 const { User } = require('../models');
 const bcrypt = require('bcrypt');
 const withAuth = require('../utils/auth');
 
-// POST sign up
+//this route will render the login page
 router.post('/signup', async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
@@ -22,7 +25,7 @@ router.post('/signup', async (req, res) => {
   }
 });
 
-// POST login
+// this route will handle the login logic
 router.post('/login', async (req, res) => {
   try {
     const user = await User.findOne({ where: { username: req.body.username } });
@@ -42,7 +45,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// POST logout
+// this route will handle the logout logic
 router.post('/logout', (req, res) => {
   req.session.destroy(() => {
     res.redirect('/');
@@ -51,10 +54,19 @@ router.post('/logout', (req, res) => {
 
 module.exports = router;
 
+//this will be the route for the login page
 app.post('/login', (req, res) => {
-  // Logic for handling login
+  
 });
 
+//this will be the route for the signup page
 app.post('/signup', (req, res) => {
-  // Logic for handling user signup
+ 
 });
+
+//this will be the route for the logout page
+app.post('/logout', (req, res) => {
+  
+});
+
+
